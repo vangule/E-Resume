@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .container{
+        width:500px;
+        margin: 50px auto 0;
+        padding: 20px;
+    
+    }
+    .container li{
+        position: relative;
+        list-style: none;
+        margin: 50px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+     li::before{
+        content: --;
+        position: absolute;
+        top:calc(100% + 10px);
+        left:700px;
+        top:700px;
+        width:100%;
+        height: 15px;
+        background-color:rgba(54,126,223,0.5);
+        border-radius:100px;
+    }
+    
+     li::after{
+        content: --;
+        position: absolute;
+        top:calc(100% + 10px);
+        left:0;
+        width:0;
+        height: 15px;
+        background-color:rgba(54,126,223,1);
+        border-radius:100px;
+        animation-duration:7s;
+        animation-timing-function:ease;
+        animation-fill-mode:forwards;
+    }
+    
+   li.html:after{
+        animation-name:html;
+    }
+    @keyframes html{
+        to{
+            width: 90%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JScript</li>
+            <li class="php">PHP</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(image/lauren.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top:20%;
+    left:0;
+
+}
+
+.nav a.active-nav {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: 90px;
+    margin:5px 0;
+    float: left;
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+
+}
+
+ .nav a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.a{
+    width: 95%;
+}
+.b{
+    width: 85%;
+}
+.c{
+    width: 80%;
+}
+.d{
+    width: 90%;
+}
+.content{
+    position: absolute;
+    width: 930px;
+    min-height: 500px;
+    height:auto;
+    right:0;
+    top:10%;
+}
+.home{
+    position: absolute;
+    left: 110px;
+    bottom: -80px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+.home h1{
+    font-size: 60px;
+    padding-right: 90px;
+    border-bottom: 1px solid black;
+    color: black;
+
+}
+.home h3{
+    font-size: 28px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+.github{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:20px;
+    right:150px;
+     
+}
+.facebook{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:20px;
+    right:210px;
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:20px;
+    right:270px;
+}
+/* Resume download button */
+.resume{
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.resume:hover{
+    background-color: white;
+    color: black;
+}
+/* download symbol */
+.download{
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    
+}
+
+.aboutus{
+    position: absolute;
+    left: 650px;
+    top:45%;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 60px;
+    background-color:gray;
+    background-color:rgba(0,0,0,0.2);
+ 
+}
+.aboutus p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    
+}
+.mypic{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    right:200px;
+    top: 50px;
+    border: 3px solid black;
+    background-color:rgba(0,0,0,0.3);
+    
+}
+ 
+.skill-rating{
+    color:white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.skill{
+    width:500px;
+    height:30px;
+    border: 2px solid grey;
+}
+.skill-level{
+    position: absolute;
+    left:510px;
+}
+.contactus{
+    position: absolute;
+    left:755px;
+    top:100px;
+    color: white;
+    padding: 0 60px;
+    
+}
+.inputtext{
+    width: 55%;
+    height: 65px;
+    border: 3px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 3px;
+
+}
+.inputmessage{
+width: 55%;
+height: 65px;
+border: 3px solid black;
+color: white;
+background-color: rgba(0,0,0,0.7);
+font-size: 20px;
+padding: 0 10px;
+margin: 3px;
+}
+
+ .inputbutton{
+    width: 150px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    border:1px solid black ;
+    font-weight: bold;
+    float: left;
+    margin-bottom: 500px;
+    border: 2px solid white;
+   
+} 
+.inputbutton:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.gallery{
+    position: absolute;
+    left: 400px;
+    top:20px;
+    color: white;
+    padding: 0 60px;
+
+}
+.gallery .image{
+    width:22%;
+    margin: 1%;
+    float: left;
+}
+.image img{
+    width: 70%;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    border: 5px solid black;
+
+}
+.image img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
